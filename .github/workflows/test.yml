@@ -4,7 +4,7 @@ env:
   CI: true
 jobs:
   release:
-    name: Test on node ${{ matrix.node_version }}
+    name: Test on Node.js ${{ matrix.node_version }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
