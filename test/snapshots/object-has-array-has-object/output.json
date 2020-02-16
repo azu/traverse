@@ -1,0 +1,70 @@
+[
+    [
+        "enter",
+        {
+            "array": [
+                {
+                    "value": 1
+                },
+                {
+                    "value": 2
+                },
+                {
+                    "value": 3
+                }
+            ]
+        }
+    ],
+    [
+        "enter",
+        {
+            "value": 1
+        }
+    ],
+    [
+        "leave",
+        {
+            "value": 1
+        }
+    ],
+    [
+        "enter",
+        {
+            "value": 2
+        }
+    ],
+    [
+        "leave",
+        {
+            "value": 2
+        }
+    ],
+    [
+        "enter",
+        {
+            "value": 3
+        }
+    ],
+    [
+        "leave",
+        {
+            "value": 3
+        }
+    ],
+    [
+        "leave",
+        {
+            "array": [
+                {
+                    "value": 1
+                },
+                {
+                    "value": 2
+                },
+                {
+                    "value": 3
+                }
+            ]
+        }
+    ]
+]

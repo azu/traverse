@@ -1,0 +1,56 @@
+[
+    [
+        "enter",
+        {
+            "depth": 1,
+            "child": {
+                "depth": 2,
+                "child": {
+                    "depth": 3
+                }
+            }
+        }
+    ],
+    [
+        "enter",
+        {
+            "depth": 2,
+            "child": {
+                "depth": 3
+            }
+        }
+    ],
+    [
+        "enter",
+        {
+            "depth": 3
+        }
+    ],
+    [
+        "leave",
+        {
+            "depth": 3
+        }
+    ],
+    [
+        "leave",
+        {
+            "depth": 2,
+            "child": {
+                "depth": 3
+            }
+        }
+    ],
+    [
+        "leave",
+        {
+            "depth": 1,
+            "child": {
+                "depth": 2,
+                "child": {
+                    "depth": 3
+                }
+            }
+        }
+    ]
+]

@@ -1,0 +1,32 @@
+[
+    [
+        "enter",
+        {
+            "depth": 1,
+            "child": {
+                "depth": 2
+            }
+        }
+    ],
+    [
+        "enter",
+        {
+            "depth": 2
+        }
+    ],
+    [
+        "leave",
+        {
+            "depth": 2
+        }
+    ],
+    [
+        "leave",
+        {
+            "depth": 1,
+            "child": {
+                "depth": 2
+            }
+        }
+    ]
+]

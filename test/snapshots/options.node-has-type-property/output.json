@@ -1,0 +1,158 @@
+[
+    [
+        "enter",
+        {
+            "type": "Program",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "a"
+                            },
+                            "init": {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "1"
+                            }
+                        }
+                    ],
+                    "kind": "var"
+                }
+            ],
+            "sourceType": "module"
+        }
+    ],
+    [
+        "enter",
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "a"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 1,
+                        "raw": "1"
+                    }
+                }
+            ],
+            "kind": "var"
+        }
+    ],
+    [
+        "enter",
+        {
+            "type": "VariableDeclarator",
+            "id": {
+                "type": "Identifier",
+                "name": "a"
+            },
+            "init": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1"
+            }
+        }
+    ],
+    [
+        "enter",
+        {
+            "type": "Identifier",
+            "name": "a"
+        }
+    ],
+    [
+        "leave",
+        {
+            "type": "Identifier",
+            "name": "a"
+        }
+    ],
+    [
+        "enter",
+        {
+            "type": "Literal",
+            "value": 1,
+            "raw": "1"
+        }
+    ],
+    [
+        "leave",
+        {
+            "type": "Literal",
+            "value": 1,
+            "raw": "1"
+        }
+    ],
+    [
+        "leave",
+        {
+            "type": "VariableDeclarator",
+            "id": {
+                "type": "Identifier",
+                "name": "a"
+            },
+            "init": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1"
+            }
+        }
+    ],
+    [
+        "leave",
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "a"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": 1,
+                        "raw": "1"
+                    }
+                }
+            ],
+            "kind": "var"
+        }
+    ],
+    [
+        "leave",
+        {
+            "type": "Program",
+            "body": [
+                {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                        {
+                            "type": "VariableDeclarator",
+                            "id": {
+                                "type": "Identifier",
+                                "name": "a"
+                            },
+                            "init": {
+                                "type": "Literal",
+                                "value": 1,
+                                "raw": "1"
+                            }
+                        }
+                    ],
+                    "kind": "var"
+                }
+            ],
+            "sourceType": "module"
+        }
+    ]
+]
