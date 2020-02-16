@@ -1,10 +1,10 @@
 export type TraverseVisitor<Node extends {}> = ({
-                                                    node,
-                                                    parent,
-                                                    context,
-                                                    prop,
-                                                    index
-                                                }: {
+    node,
+    parent,
+    context,
+    prop,
+    index
+}: {
     node: Node;
     parent: Node | null;
     context: TraverseContext<Node>;
@@ -49,11 +49,13 @@ export type createTraverserOptions = {
      * Default: () => true
      */
     nodePredicate?: TraverserNodePredicate;
-}
-export const createTraverser = (options: createTraverserOptions) => {
-    const nodePredicate: TraverserNodePredicate = options.nodePredicate || function() {
-        return true;
-    };
+};
+export const createTraverser = (options?: createTraverserOptions) => {
+    const nodePredicate: TraverserNodePredicate =
+        (options && options.nodePredicate) ||
+        function() {
+            return true;
+        };
     const replace = <Node extends {}>(parent: any, prop: string | undefined, index: number | undefined, node: Node) => {
         if (parent && prop) {
             if (index !== undefined) {
@@ -74,13 +76,13 @@ export const createTraverser = (options: createTraverserOptions) => {
         }
     };
     const visit = <Node extends {}>({
-                                        node,
-                                        parent,
-                                        prop,
-                                        index,
-                                        enter,
-                                        leave
-                                    }: {
+        node,
+        parent,
+        prop,
+        index,
+        enter,
+        leave
+    }: {
         node: Node;
         parent: Node | null;
         prop?: string;
@@ -170,13 +172,16 @@ export const createTraverser = (options: createTraverserOptions) => {
     };
 
     return {
-        visit<Node extends {}>(node: Node, {
-            enter,
-            leave
-        }: {
-            enter?: TraverseVisitor<Node>;
-            leave?: TraverseVisitor<Node>;
-        }) {
+        visit<Node extends {}>(
+            node: Node,
+            {
+                enter,
+                leave
+            }: {
+                enter?: TraverseVisitor<Node>;
+                leave?: TraverseVisitor<Node>;
+            }
+        ) {
             return visit<Node>({ node, parent: null, enter, leave });
         }
     };
