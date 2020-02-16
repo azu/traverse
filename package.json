@@ -1,6 +1,6 @@
 {
   "name": "@deps/traverse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Traverser library for object.",
   "keywords": [
     "traverse",
